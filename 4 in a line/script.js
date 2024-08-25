@@ -24,6 +24,7 @@ function getmouse(event) {
     return 1;
   } else {
     console.log(`X : ${x}, Y : ${y}`);
-    html = `<div class="piece" style="grid-area: ${y + 1} / ${x + 1}"></div>`;
+    let html = `<div class="piece" style="grid-area: ${y + 1} / ${x + 1}"></div>`;
     playBoard.innerHTML = html;
   }
+}
