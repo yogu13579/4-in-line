@@ -1,8 +1,6 @@
-document.addEventListener("mousemove", getmouse);
-document.addEventListener("click", function (event) {
-  console.log(event.button);
-});
 const playBoard = document.querySelector(".play-board");
+
+document.addEventListener("mousemove", getmouse);
 
 function getmouse(event) {
   const rect = playBoard.getBoundingClientRect();
@@ -26,7 +24,6 @@ function getmouse(event) {
     return 1;
   } else {
     console.log(`X : ${x}, Y : ${y}`);
-    let html = `<div class="piece" style="grid-area: ${y + 1} / ${x + 1}"></div>`;
+    html = `<div class="piece" style="grid-area: ${y + 1} / ${x + 1}"></div>`;
     playBoard.innerHTML = html;
   }
-}
