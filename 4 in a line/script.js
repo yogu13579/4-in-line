@@ -252,17 +252,6 @@ document.addEventListener("click", function (event){
 });
 
 function checkWinner() {
-  let i = 0;
-  if (red.includes(win[i][0])) {
-    if (red.includes(win[i][1])) {
-      if (red.includes(win[i][2])) {
-        if (red.includes(win[i][3])) {
-          redwins();
-        }
-      }
-    }
-  } 
-  i++;
 }
 
 
