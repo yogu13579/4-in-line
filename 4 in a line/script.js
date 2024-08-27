@@ -252,6 +252,7 @@ document.addEventListener("click", function (event){
 });
 
 function checkWinner() {
+  
 }
 
 
