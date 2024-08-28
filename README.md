@@ -19,4 +19,3 @@ python3 -m http.server 8888
 
 4. 打开浏览器，输入网址：http://localhost:8888/ 。
 5. 然后就可以玩了。
-
