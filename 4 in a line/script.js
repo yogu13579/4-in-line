@@ -51,13 +51,13 @@ document.addEventListener("mousemove", function (event) {
 function redwins() {
   clearInterval(setId);
   alert("Game Over! Red is the winner! Press reload to replay...");
-  location.replace('http://0.0.0.0:8888/');
+  location.reload();
 }
 
 function bluewins() {
   clearInterval(setId);
   alert("Game Over! Blue is the winner! Press reload to replay...");
-  location.replace('http://0.0.0.0:8888/');
+  location.reload();
 }
 
 document.addEventListener("click", function (event){ 
