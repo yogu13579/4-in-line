@@ -81,7 +81,7 @@ document.addEventListener("click", function (event){
         turn++;
         okY1--;
         who.innerText = `Who's turn : red`;
-        i1++
+        i1++;
       } else {
         return;
       }
@@ -117,7 +117,7 @@ document.addEventListener("click", function (event){
         event.target.style.backgroundColor = 'red';
         turn++;
         okY3--;
-        i++
+        i++;
         who.innerText = `Who's turn : blue`;
       } else {
         return;
@@ -190,7 +190,7 @@ document.addEventListener("click", function (event){
         turn++;
         okY6--;
         who.innerText = `Who's turn : blue`;
-        i++
+        i++;
       } else {
         return;
       }
@@ -225,7 +225,7 @@ document.addEventListener("click", function (event){
         turn++;
         okY7--;
         who.innerText = `Who's turn : red`;
-        i1++
+        i1++;
       } else {
         return;
       }
@@ -249,7 +249,7 @@ document.addEventListener("click", function (event){
         turn++;
         okY8--;
         who.innerText = `Who's turn : red`;
-        i1++
+        i1++;
       } else {
         return;
       }
