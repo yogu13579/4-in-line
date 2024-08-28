@@ -67,7 +67,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY1--;
         who.innerText = `Who's turn : blue`;
         i++;
@@ -78,7 +78,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY1--;
         who.innerText = `Who's turn : red`;
         i1++
@@ -91,7 +91,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY2--;
         who.innerText = `Who's turn : blue`;
         i++;
@@ -102,7 +102,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY2--;
         who.innerText = `Who's turn : red`;
         i1++;
@@ -115,7 +115,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY3--;
         i++
         who.innerText = `Who's turn : blue`;
@@ -126,7 +126,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY3--;
         who.innerText = `Who's turn : red`;
         i1++;
@@ -139,7 +139,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;;
         okY4--;
         who.innerText = `Who's turn : blue`;
         i++;
@@ -150,7 +150,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY4--;
         who.innerText = `Who's turn : red`;
         i1++;
@@ -163,7 +163,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY5--;
         who.innerText = `Who's turn : blue`;
         i++;
@@ -174,7 +174,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY5--;
         who.innerText = `Who's turn : red`;
         i1++;
@@ -187,7 +187,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY6--;
         who.innerText = `Who's turn : blue`;
         i++
@@ -198,7 +198,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY6--;
         who.innerText = `Who's turn : red`;
         i1++;
@@ -211,7 +211,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY7--;
         i++;
         who.innerText = `Who's turn : blue`;
@@ -222,7 +222,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY7--;
         who.innerText = `Who's turn : red`;
         i1++
@@ -235,7 +235,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'red';
-        turn++
+        turn++;
         okY8--;
         who.innerText = `Who's turn : blue`;
         i++;
@@ -246,7 +246,7 @@ document.addEventListener("click", function (event){
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
         event.target.style.backgroundColor = 'blue';
-        turn++
+        turn++;
         okY8--;
         who.innerText = `Who's turn : red`;
         i1++
