@@ -20,7 +20,7 @@ let okY7 = 5;
 let okY8 = 5;
 
 for (let i = 0; i < 40; i++) {
-  let html = `<div clase="div${i}" style="background-color: white;"></div>`
+  let html = `<div clase="div${i + 1}" style="background-color: white;"></div>`;
   playBoard.insertAdjacentHTML("beforeend", html);
 }
 
@@ -45,8 +45,8 @@ document.addEventListener("mousemove", function (event) {
   } else if (x < 0) {
     return;
   } else {
-    console.log(`X : ${x + 1}, Y : ${y + 1}`)
-    line.innerText = `It's line ${x + 1}`
+    console.log(`X : ${x + 1}, Y : ${y + 1}`);
+    line.innerText = `It's line ${x + 1}`;
     lx = x + 1;
     ly = y + 1;
   }
@@ -64,13 +64,12 @@ function bluewins() {
   location.reload();
 }
 
-document.addEventListener("click", function (event){ 
-  
+document.addEventListener("click", function (event) {
   if (ly === okY1 && lx === 1) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY1--;
         who.innerText = `Who's turn : blue`;
@@ -81,7 +80,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY1--;
         who.innerText = `Who's turn : red`;
@@ -90,11 +89,11 @@ document.addEventListener("click", function (event){
         return;
       }
     }
-  }else if (ly === okY2 && lx === 2) {
+  } else if (ly === okY2 && lx === 2) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY2--;
         who.innerText = `Who's turn : blue`;
@@ -105,7 +104,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY2--;
         who.innerText = `Who's turn : red`;
@@ -114,11 +113,11 @@ document.addEventListener("click", function (event){
         return;
       }
     }
-  }else if (ly === okY3 && lx === 3) {
+  } else if (ly === okY3 && lx === 3) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY3--;
         i++;
@@ -129,7 +128,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY3--;
         who.innerText = `Who's turn : red`;
@@ -138,12 +137,12 @@ document.addEventListener("click", function (event){
         return;
       }
     }
-  }else if (ly === okY4 && lx === 4) {
+  } else if (ly === okY4 && lx === 4) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
-        turn++;;
+        event.target.style.backgroundColor = "red";
+        turn++;
         okY4--;
         who.innerText = `Who's turn : blue`;
         i++;
@@ -153,7 +152,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY4--;
         who.innerText = `Who's turn : red`;
@@ -162,11 +161,11 @@ document.addEventListener("click", function (event){
         return;
       }
     }
-  }else if (ly === okY5 && lx === 5) {
+  } else if (ly === okY5 && lx === 5) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY5--;
         who.innerText = `Who's turn : blue`;
@@ -177,7 +176,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY5--;
         who.innerText = `Who's turn : red`;
@@ -186,11 +185,11 @@ document.addEventListener("click", function (event){
         return;
       }
     }
-  }else if (ly === okY6 && lx === 6) {
+  } else if (ly === okY6 && lx === 6) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY6--;
         who.innerText = `Who's turn : blue`;
@@ -201,7 +200,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY6--;
         who.innerText = `Who's turn : red`;
@@ -210,11 +209,11 @@ document.addEventListener("click", function (event){
         return;
       }
     }
-  }else if (ly === okY7 && lx === 7) {
+  } else if (ly === okY7 && lx === 7) {
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY7--;
         i++;
@@ -225,7 +224,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY7--;
         who.innerText = `Who's turn : red`;
@@ -238,7 +237,7 @@ document.addEventListener("click", function (event){
     if (turn % 2 === 0) {
       if (event.target.style.backgroundColor === "white") {
         red[i] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'red';
+        event.target.style.backgroundColor = "red";
         turn++;
         okY8--;
         who.innerText = `Who's turn : blue`;
@@ -249,7 +248,7 @@ document.addEventListener("click", function (event){
     } else if (turn % 2 !== 0) {
       if (event.target.style.backgroundColor === "white") {
         blue[i1] = `${lx}` + `${ly}`;
-        event.target.style.backgroundColor = 'blue';
+        event.target.style.backgroundColor = "blue";
         turn++;
         okY8--;
         who.innerText = `Who's turn : red`;
@@ -257,9 +256,8 @@ document.addEventListener("click", function (event){
       } else {
         return;
       }
-    };
-  } 
-  
+    }
+  }
 });
 
 function checkWinner() {
@@ -270,7 +268,7 @@ function checkWinner() {
         if (red.includes(String(num + 30))) {
           redwins();
         }
-      };
+      }
     } else if (red.includes(String(num + 1))) {
       if (red.includes(String(num + 2))) {
         if (red.includes(String(num + 3))) {
@@ -290,7 +288,7 @@ function checkWinner() {
         }
       }
     }
-  } 
+  }
   for (let i = 0; i < blue.length; i++) {
     let num1 = Number(blue[i]);
     if (blue.includes(String(num1 + 10))) {
@@ -298,7 +296,7 @@ function checkWinner() {
         if (blue.includes(String(num1 + 30))) {
           bluewins();
         }
-      };
+      }
     } else if (blue.includes(String(num1 + 1))) {
       if (blue.includes(String(num1 + 2))) {
         if (blue.includes(String(num1 + 3))) {
@@ -320,6 +318,5 @@ function checkWinner() {
     }
   }
 }
-
 
 setId = setInterval(checkWinner, 100);
