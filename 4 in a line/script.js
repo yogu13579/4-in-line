@@ -19,6 +19,11 @@ let okY6 = 5;
 let okY7 = 5;
 let okY8 = 5;
 
+for (let i = 0; i < 40; i++) {
+  let html = `<div clase="div${i}" style="background-color: white;"></div>`
+  playBoard.insertAdjacentHTML("beforeend", html);
+}
+
 document.addEventListener("mousemove", function (event) {
   const rect = playBoard.getBoundingClientRect();
 
@@ -45,7 +50,6 @@ document.addEventListener("mousemove", function (event) {
     lx = x + 1;
     ly = y + 1;
   }
-  
 });
 
 function redwins() {
