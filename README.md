@@ -6,7 +6,9 @@
 
 ## 试用
 
-- 在本机跑：
+有两种方案：
+
+一，在本机跑：
 
 1. 下载 zip 包，然后解压缩。
 2. 在终端里面进入解压缩后的文件夹。
@@ -21,7 +23,7 @@ python3 -m http.server 8888
 4. 打开浏览器，输入网址：http://localhost:8888/ 。
 5. 然后就可以试用了。
 
-- 用 Github page：
+二，用 Github page：
 
 1. 输入网址 https://yogu13579.github.io/JavaScript-game/。
 2. 点击 4 in a line。
