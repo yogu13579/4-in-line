@@ -35,7 +35,7 @@ body {
     width: 100%;
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(8, 1fr);
-    gap: 10px; 
+    gap: 10px;
     padding: 10px;
 }
 .play-board .piece {
