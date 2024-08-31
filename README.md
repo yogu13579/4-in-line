@@ -25,6 +25,6 @@ python3 -m http.server 8888
 
 二，用 Github page：
 
-1. 输入网址 https://yogu13579.github.io/4-in-line。
+1. 输入网址 https://yogu13579.github.io/4-in-line 。
 2. 点击 4 in a line。
 3. 里面有已经做好的成品。
