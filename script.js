@@ -1,12 +1,16 @@
 const playBoard = document.querySelector(".play-board");
 const line = document.querySelector(".line");
 const who = document.querySelector(".turn");
+const div3 = document.getElementById("div3");
+
+let id;
 let setId;
 let color;
 let lx;
 let ly;
 let red = [];
 let blue = [];
+let draw = 0;
 let i = 0;
 let i1 = 0;
 let turn = 2;
@@ -20,7 +24,7 @@ let okY7 = 5;
 let okY8 = 5;
 
 for (let i = 0; i < 40; i++) {
-  let html = `<div clase="div${i + 1}" style="background-color: white;"></div>`;
+  let html = `<div id="div${i + 1}" style="background-color: white;"></div>`;
   playBoard.insertAdjacentHTML("beforeend", html);
 }
 
@@ -45,7 +49,7 @@ document.addEventListener("mousemove", function (event) {
   } else if (x < 0) {
     return;
   } else {
-    console.log(`X : ${x + 1}, Y : ${y + 1}`);
+    // console.log(`X : ${x + 1}, Y : ${y + 1}`);
     line.innerText = `It's line ${x + 1}`;
     lx = x + 1;
     ly = y + 1;
@@ -64,6 +68,12 @@ function bluewins() {
   location.reload();
 }
 
+const isdraw = () => {
+  clearInterval(setId);
+  alert("Game Over! It is a draw! Press reload to replay...");
+  location.reload();
+};
+
 document.addEventListener("click", function (event) {
   if (ly === okY1 && lx === 1) {
     if (turn % 2 === 0) {
@@ -74,6 +84,7 @@ document.addEventListener("click", function (event) {
         okY1--;
         who.innerText = `Who's turn : blue`;
         i++;
+        draw++;
       } else {
         return;
       }
@@ -85,6 +96,7 @@ document.addEventListener("click", function (event) {
         okY1--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -98,6 +110,7 @@ document.addEventListener("click", function (event) {
         okY2--;
         who.innerText = `Who's turn : blue`;
         i++;
+        draw++;
       } else {
         return;
       }
@@ -109,6 +122,7 @@ document.addEventListener("click", function (event) {
         okY2--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -122,6 +136,7 @@ document.addEventListener("click", function (event) {
         okY3--;
         i++;
         who.innerText = `Who's turn : blue`;
+        draw++;
       } else {
         return;
       }
@@ -133,6 +148,7 @@ document.addEventListener("click", function (event) {
         okY3--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -146,6 +162,7 @@ document.addEventListener("click", function (event) {
         okY4--;
         who.innerText = `Who's turn : blue`;
         i++;
+        draw++;
       } else {
         return;
       }
@@ -157,6 +174,7 @@ document.addEventListener("click", function (event) {
         okY4--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -170,6 +188,7 @@ document.addEventListener("click", function (event) {
         okY5--;
         who.innerText = `Who's turn : blue`;
         i++;
+        draw++;
       } else {
         return;
       }
@@ -181,6 +200,7 @@ document.addEventListener("click", function (event) {
         okY5--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -194,6 +214,7 @@ document.addEventListener("click", function (event) {
         okY6--;
         who.innerText = `Who's turn : blue`;
         i++;
+        draw++;
       } else {
         return;
       }
@@ -205,6 +226,7 @@ document.addEventListener("click", function (event) {
         okY6--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -218,6 +240,7 @@ document.addEventListener("click", function (event) {
         okY7--;
         i++;
         who.innerText = `Who's turn : blue`;
+        draw++;
       } else {
         return;
       }
@@ -229,6 +252,7 @@ document.addEventListener("click", function (event) {
         okY7--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -242,6 +266,7 @@ document.addEventListener("click", function (event) {
         okY8--;
         who.innerText = `Who's turn : blue`;
         i++;
+        draw++;
       } else {
         return;
       }
@@ -253,6 +278,7 @@ document.addEventListener("click", function (event) {
         okY8--;
         who.innerText = `Who's turn : red`;
         i1++;
+        draw++;
       } else {
         return;
       }
@@ -261,6 +287,9 @@ document.addEventListener("click", function (event) {
 });
 
 function checkWinner() {
+  if (draw === 40) {
+    isdraw();
+  }
   for (let i = 0; i < red.length; i++) {
     let num = Number(red[i]);
     if (red.includes(String(num + 10))) {
